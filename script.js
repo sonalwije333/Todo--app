@@ -1,4 +1,4 @@
-// script.js
+
 
 document.getElementById('addTaskButton').addEventListener('click', addTask);
 
@@ -13,7 +13,7 @@ function addTask() {
     // Checkbox to mark task complete
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.className = 'mr-2';
+    checkbox.className = 'mr-2 ';
     checkbox.addEventListener('change', () => toggleComplete(li));
 
     // Task text
@@ -23,7 +23,7 @@ function addTask() {
 
     // Delete button
     const deleteButton = document.createElement('button');
-    deleteButton.className = "ml-2 text-red-500 hover:text-red-700";
+    deleteButton.className = "ml-2 text-black hover:text-red-700";
     deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     deleteButton.addEventListener('click', () => deleteTask(li));
 
@@ -41,11 +41,11 @@ function addTask() {
 }
 
 function toggleComplete(taskElement) {
-  // Toggles a 'completed' class on the task
+ 
   taskElement.classList.toggle('line-through');
 }
 
 function deleteTask(taskElement) {
-  // Removes the task from the list
+
   taskElement.remove();
 }
