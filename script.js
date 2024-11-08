@@ -30,7 +30,7 @@ function addTask() {
     // Append elements to the task list item
     li.appendChild(checkbox);
     li.appendChild(taskTextElement);
-    li.appendChild(deleteButton);
+    li.appendChild(deleteButton); 
 
     // Add the task to the list
     document.getElementById('taskList').appendChild(li);
